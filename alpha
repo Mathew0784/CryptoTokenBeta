@@ -71,5 +71,7 @@ class TestApp(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+python test_app.py
+
 
 python app.py
