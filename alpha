@@ -27,6 +27,8 @@ def get_exchange_rates():
             exchange_rates[crypto_id] = data[crypto_id]
     return exchange_rates
 
+python app.py
+
 if __name__ == '__main__':
     app.run(debug=True)
 
@@ -109,4 +111,3 @@ if __name__ == '__main__':
 
 
 
-python app.py
