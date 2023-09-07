@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cryptocurrency Exchange Rates</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Cryptocurrency Exchange Rates</h1>
+    </header>
+
+    <section class="crypto-info">
+        <table>
+            <tr>
+                <th>Cryptocurrency</th>
+                <th>Current Price (USD)</th>
+            </tr>
+            {% for crypto in crypto_data %}
+            <tr>
+                <td>{{ crypto[0] }}</td>
+                <td>${{ crypto[1] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cryptocurrency Exchange Rates</p>
+    </footer>
+</body>
+</html>
